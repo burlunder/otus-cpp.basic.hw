@@ -1,27 +1,12 @@
 #include <cstdlib>
 #include <ctime>
 
-int get_random_value() {
-  const int max_value = 100;
+int get_random_value(const int max_value) {
 
   std::srand(
       std::time(nullptr)); // use current time as seed for random generator
 
-  const int random_value = std::rand() % 100;
+  const int random_value = std::rand() % max_value;
 
   return random_value;
 }
-
-// int main() {
-//
-//   const int max_value = 100;
-//
-//   std::srand(
-//       std::time(nullptr)); // use current time as seed for random generator
-//
-//   const int random_value = std::rand() % 100;
-//
-//   std::cout << random_value << std::endl;
-//
-//   return 0;
-// }
