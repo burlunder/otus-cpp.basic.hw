@@ -5,16 +5,16 @@
  * Задает скорость объекта
  * @param velocity новое значение скорости
  */
-void Ball::setVelocity(const Velocity &velocity) {
-  // TODO: место для доработки
+void Ball::setVelocity(const Velocity& velocity) {
+    // TODO: место для доработки
 }
 
 /**
  * @return скорость объекта
  */
 Velocity Ball::getVelocity() const {
-  // TODO: место для доработки
-  return {};
+    // TODO: место для доработки
+    return {};
 }
 
 /**
@@ -25,24 +25,24 @@ Velocity Ball::getVelocity() const {
  * Рисование выполняется путем вызова painter.draw(...)
  * @param painter контекст отрисовки
  */
-void Ball::draw(Painter &painter) const {
-  // TODO: место для доработки
+void Ball::draw(Painter& painter) const {
+    // TODO: место для доработки
 }
 
 /**
  * Задает координаты центра объекта
  * @param center новый центр объекта
  */
-void Ball::setCenter(const Point &center) {
-  // TODO: место для доработки
+void Ball::setCenter(const Point& center) {
+    // TODO: место для доработки
 }
 
 /**
  * @return центр объекта
  */
 Point Ball::getCenter() const {
-  // TODO: место для доработки
-  return {};
+    // TODO: место для доработки
+    return {};
 }
 
 /**
@@ -51,8 +51,8 @@ Point Ball::getCenter() const {
  * не требуется
  */
 double Ball::getRadius() const {
-  // TODO: место для доработки
-  return {};
+    // TODO: место для доработки
+    return {};
 }
 
 /**
@@ -63,6 +63,6 @@ double Ball::getRadius() const {
  * эквивалентна объему: PI * radius^3 * 4. / 3.
  */
 double Ball::getMass() const {
-  // TODO: место для доработки
-  return {};
+    // TODO: место для доработки
+    return {};
 }

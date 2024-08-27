@@ -13,8 +13,8 @@ else ()
   message(STATUS "Get SFML from the source code")
   include(FetchContent)
   FetchContent_Declare(SFML
-    GIT_REPOSITORY https://github.com/SFML/SFML.git
-    GIT_TAG 2.6.x)
+            GIT_REPOSITORY https://github.com/SFML/SFML.git
+            GIT_TAG 2.6.x)
   set(SFML_BUILD_AUDIO OFF CACHE BOOL "" FORCE)
   set(SFML_BUILD_NETWORK OFF CACHE BOOL "" FORCE)
   set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
@@ -32,11 +32,11 @@ if (MSVC)
 endif ()
 
 add_executable(physics
-  main.cpp World.cpp Ball.cpp Physics.cpp Color.cpp Painter.cpp
-  black_box/Application.cpp black_box/View.cpp black_box/PainterImpl.cpp)
+        main.cpp World.cpp Ball.cpp Physics.cpp Color.cpp Painter.cpp
+        black_box/Application.cpp black_box/View.cpp black_box/PainterImpl.cpp)
 target_link_libraries(physics PRIVATE sfml-graphics)
 
 target_compile_options(physics PRIVATE
-  $<$<CXX_COMPILER_ID:MSVC>:/W4>
-  $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Wextra -Wpedantic>
+        $<$<CXX_COMPILER_ID:MSVC>:/W4>
+        $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Wextra -Wpedantic>
 )
