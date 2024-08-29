@@ -5,10 +5,15 @@
 int main(int argc, char* argv[]) {
 
     if (argc < 2) {
+        // std::cout << "arg0: " << argv[0] << std::endl;
         std::cerr << "Please, call with one argument "
                   << "( example: " << argv[0] << " <path to file smile.txt> )";
         return 1;
+    } else {
+        // std::cout << "arg0: " << argv[0] << '\n'
+        //           << "arg1: " << argv[1] << std::endl;
     }
+
     try {
         World w(argv[1]);
         /**

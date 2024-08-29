@@ -5,11 +5,11 @@
 #include <map>
 
 Application::Application(const char* name)
-    : window{{1280u, 960u},
+    : window{{800u, 600u},
              name,
              sf::Style::Titlebar | sf::Style::Close,
              sf::ContextSettings(0, 0, 4)},
-      view({0., 0.}, 1280, 960, 0.2) {}
+      view({0., 0.}, 800, 600, 0.2) {}
 
 void Application::run(World& world) {
     time = std::chrono::system_clock::now();
